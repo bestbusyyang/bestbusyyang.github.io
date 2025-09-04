@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我|我的作品集</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Font Awesome图标（用于社交媒体图标） -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 复用导航栏 -->
+     <header>
+        <nav>
+            <div class="logo">我的作品集</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="portfolio.html">作品展示</a></li>
+                <li><a href="contact.html" class="active">联系我</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- 主要内容区域 -->
+      <main class="contact-cotainer">
+        <!-- 联系信息区 -->
+         <div class="contact-info">
+            <h2>联系信息</h2>
+            <p>有任何问题和合作意向？请通过以下方式联系我，我会尽快回复！</p>
+
+            <!-- 联系方式列表 -->
+             <div class="contact-details">
+                <div class="detail-item">
+                    <!-- 邮箱图标 -->
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>电话</h3>
+                        <p>157XXXXXXXXX</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <!-- 地址图标 -->
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                    <h3>地址</h3>
+                    <p>北京市XXXXXXXX</p>
+                </div>
+             </div>
+         </div>
+
+         <!-- 社交媒体链接 -->
+          <div class="contact-form">
+            <h2>发送消息</h2>
+            <form action="#" method="post" class="message-form">
+                <!-- 姓名输入框 -->
+                 <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                 </div>
+
+                 <!-- 邮箱输入框 -->
+                  <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required >
+                  </div>
+                  <!-- 主题输入框 -->
+                   <div class="form-group">
+                    <label for="subject">主题</label>
+                    <input type="text" id="subject" name="subject">
+                   </div>
+                   <!-- 留言文本域 -->
+                    <div class="form-group">
+                        <label for="subject">留言内容</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <!-- 提交按钮 -->
+                     <button type="submit" class="btn submit-btn">发错消息</button>
+            </form>
+          </div>
+      </main>
+
+      <!-- 复用页脚 -->
+       <footer>
+        <div class="copyright">
+            <p>&copy;2023 我的作品集，保留所有权利。</p>
+        </div>
+       </footer>
+</body>
+</html>
